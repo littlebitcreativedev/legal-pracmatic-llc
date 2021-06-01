@@ -1,0 +1,62 @@
+$primaryColor: #252d40;
+$secondaryColor: #a8abb3;
+
+.contact-form {
+  .form-row {
+    margin-bottom: 24px;
+    .form-input {
+      & label.Mui-focused {
+        color: $secondaryColor;
+      }
+
+      & .MuiOutlinedInput-root {
+        &:hover fieldset {
+          border-color: $secondaryColor;
+        }
+
+        &.Mui-focused fieldset {
+          border-color: $primaryColor;
+        }
+      }
+    }
+  }
+
+  button {
+    background-color: #252d40;
+    color: white;
+
+    &:hover {
+      background-color: #a8abb3;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-form {
+    .form-row {
+      .form-input {
+        &.small-width {
+          width: 100%;
+          &:first-child {
+            margin-bottom: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .contact-form {
+    .form-row {
+      .form-input {
+        &.small-width {
+          width: 100%;
+          &:first-child {
+            margin-bottom: 24px;
+          }
+        }
+      }
+    }
+  }
+}

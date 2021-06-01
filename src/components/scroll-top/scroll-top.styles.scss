@@ -1,0 +1,22 @@
+.scroll-top {
+    margin-right: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+
+    .icon {
+        margin: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        background-color: #4CC9CF;
+        color: white;
+        font-size: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

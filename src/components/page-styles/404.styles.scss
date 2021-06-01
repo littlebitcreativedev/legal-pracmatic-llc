@@ -1,0 +1,19 @@
+.page-not-found {
+  .section-text {
+    p {
+      font-size: 1.75em;
+      color: #a8abb3;
+      position: relative;
+      margin-top: 16px;
+      margin-bottom: 80px;
+
+      &::after {
+        content: "Let's try that again from the top.";
+        font-size: 16px;
+        position: absolute;
+        left: 0;
+        top: 130%;
+      }
+    }
+  }
+}

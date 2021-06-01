@@ -1,0 +1,45 @@
+.page-banner {
+  height: 313px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .image {
+    position: absolute;
+    width: 937px;
+    height: 313px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  .content {
+    text-align: center;
+    color: #252d40;
+
+    .title {
+      margin: 0;
+      margin-bottom: 16px;
+    }
+
+    .breadcrumb-container {
+      display: flex;
+      justify-content: center;
+
+      a,
+      span {
+        font-size: 14px;
+      }
+
+      a,
+      .MuiBreadcrumbs-separator {
+        color: #565c6b;
+      }
+
+      span {
+        color: #39c4ca;
+      }
+    }
+  }
+}

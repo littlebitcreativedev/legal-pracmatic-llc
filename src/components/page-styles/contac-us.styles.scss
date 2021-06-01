@@ -1,0 +1,63 @@
+.contact-us {
+  .section-contact__form {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .section-content {
+      padding: 0 36px 36px;
+
+      h2 {
+        margin-top: 0;
+        margin-bottom: 40px;
+        line-height: 26px;
+      }
+
+      div {
+        .contact-details {
+          margin-bottom: 24px;
+
+          .bold {
+            font-weight: 600;
+            margin-right: 24px;
+          }
+        }
+
+        p {
+          margin-top: 32px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-us {
+    .section-contact__form {
+      .section-content {
+        margin-top: 24px;
+        padding: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .contact-us {
+    .section-contact__form {
+      .section-content {
+        margin-top: 24px;
+        padding: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .contact-us {
+    .section-contact__form {
+      .section-content {
+        margin-top: 0;
+        padding: 0;
+      }
+    }
+  }
+}

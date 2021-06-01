@@ -1,0 +1,29 @@
+.section-introduction {
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+
+  .component-container {
+    width: 998px;
+    display: flex;
+    justify-content: space-between;
+
+    .section-heading {
+      width: 231px;
+
+      h2 {
+        margin: 0;
+      }
+    }
+
+    .paragraph {
+      width: 357px;
+      margin-left: 27px;
+
+      p {
+        margin: 0;
+        margin-bottom: 18px;
+      }
+    }
+  }
+}

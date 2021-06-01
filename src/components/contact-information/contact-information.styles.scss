@@ -1,0 +1,41 @@
+.contact-information {
+  width: 100%;
+  padding: 80px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .contact-card {
+    height: 213px;
+    .contact-card__content {
+      padding: 0;
+      padding: 40px 40px;
+      h4 {
+        margin-bottom: 16px;
+      }
+      div {
+        font-size: 0.75em;
+        margin-bottom: 8px;
+
+        .data {
+          color: #a8abb3;
+          margin-left: 16px;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-information {
+    .contact-card {
+      height: 181px;
+      .contact-card__content {
+        padding: 24px 24px;
+      }
+    }
+  }
+}

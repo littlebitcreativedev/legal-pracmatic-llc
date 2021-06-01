@@ -1,0 +1,27 @@
+.section-services {
+  padding: 80px 0;
+
+  .section-heading {
+    margin: 0 auto;
+    margin-bottom: 36px;
+    text-align: center;
+    width: 527px;
+
+    .heading {
+      margin: 0;
+      margin-bottom: 8px;
+    }
+
+    .description {
+      margin: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .section-services {
+    .section-heading {
+      width: 100%;
+    }
+  }
+}

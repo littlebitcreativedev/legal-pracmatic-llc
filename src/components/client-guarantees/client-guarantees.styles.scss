@@ -1,0 +1,32 @@
+.client-guarantee {
+  padding: 80px 0;
+  .section-heading {
+    margin-bottom: 40px;
+  }
+
+  .card-container {
+    .card {
+      padding-top: 24px;
+      display: flex;
+      //justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100%;
+      box-shadow: none;
+
+      span {
+        width: 70px;
+        height: 70px;
+        .service-icon {
+          margin-bottom: 16px;
+        }
+      }
+
+      p {
+        width: 200px;
+        font-size: 14px;
+        color: #a8abb3;
+      }
+    }
+  }
+}
