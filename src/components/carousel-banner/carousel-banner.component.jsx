@@ -11,9 +11,6 @@ import CustomButton from '../custom-button/custom-button.component';
 import './carousel-banner.styles.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import SlideOne from '../../assets/books-people-working.svg';
-import SlideTwo from '../../assets/woman-man-shaking-hands.svg';
-
 const CarouselBanner = () => (
   <Carousel className="carousel" controls={false}>
     <Carousel.Item className="carousel-item">
