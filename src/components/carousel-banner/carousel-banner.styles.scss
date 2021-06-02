@@ -11,7 +11,9 @@
       }
 
       .carousel-caption {
+        background-color: rgba($color: #ffffff, $alpha: 0.75);
         width: 600px;
+        height: 300px;
         top: 100px;
         left: 100px;
         text-align: left;

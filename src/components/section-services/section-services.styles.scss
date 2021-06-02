@@ -20,8 +20,15 @@
 
 @media only screen and (max-width: 600px) {
   .section-services {
+    padding: 40px 0;
     .section-heading {
       width: 100%;
     }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .section-services {
+    padding: 40px 0;
   }
 }
