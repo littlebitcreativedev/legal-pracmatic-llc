@@ -1,4 +1,4 @@
-.section-image_left {
+.section-image_left-button {
   padding: 80px 0;
   display: flex;
   position: relative;
@@ -39,9 +39,9 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .section-image_left {
-    padding: 40px 0;
+  .section-image_left-button {
     position: relative;
+    padding-top: 0;
     .image {
       width: 100%;
     }
@@ -73,22 +73,15 @@
 }
 
 @media only screen and (min-width: 600px) {
-  .section-image_left {
-    padding: 40px 0;
+  .section-image_left-button {
     .section-content {
-      width: 500px;
-      height: 400px;
+      margin-left: 0;
       right: 0;
-      bottom: 80px;
+      width: 500px;
 
       .inner-container {
-        padding: 50px 0 0 50px;
         .section-text {
-          margin-bottom: 48px;
-
-          p {
-            width: 80%;
-          }
+          margin-bottom: 32px;
         }
       }
     }

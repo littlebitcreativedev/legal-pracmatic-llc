@@ -7,11 +7,12 @@ import CustomButton from '../custom-button/custom-button.component';
 import './section-image_left-button.styles.scss';
 
 const SectionImageLeftButtton = ({ imageUrl, sectionHeading, text, routeName }) => (
-  <div className="section-image_left">
-    <div className="image"
-    style={{
-      backgroundImage: `url('${imageUrl}')`,
-    }}
+  <div className="section-image_left-button">
+    <div
+      className="image"
+      style={{
+        backgroundImage: `url('${imageUrl}')`,
+      }}
     />
     <div className="section-content">
       <div className="inner-container">

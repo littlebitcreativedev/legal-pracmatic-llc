@@ -20,8 +20,8 @@ const IndexPage = () => (
   <>
     <SEO title="Home" />
     <div className="homepage">
-      <CarouselBanner />
       <Container>
+        <CarouselBanner />
         <SectionImageLeftButton
           imageUrl="https://i.ibb.co/W0n0c2R/woman-laptop-working.png"
           sectionHeading="Practical & Simple Translations"

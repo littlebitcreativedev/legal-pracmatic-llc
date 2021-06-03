@@ -49,8 +49,8 @@ const SectionContact = () => {
       }}
     >
       <Container>
-        <Grid container spacing={7}>
-          <Grid item xs={12} md={6}>
+        <Grid className="container">
+          <Grid item xs={12} md={5}>
             <form onSubmit={handleSubmit} action="/thank-you/" className="contact-form">
               <input type="hidden" name="contact_number" />
               <Grid item xs className="form-row">
@@ -108,7 +108,7 @@ const SectionContact = () => {
               </Button>
             </form>
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={5}>
             <div className="message">
               <h2>Ready to get started?</h2>
               <div>

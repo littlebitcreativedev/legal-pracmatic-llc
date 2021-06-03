@@ -1,18 +1,10 @@
 .page-banner {
+  background-repeat: no-repeat;
+  background-size: contain;
   height: 313px;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-
-  .image {
-    position: absolute;
-    width: 937px;
-    height: 313px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: -1;
-  }
 
   .content {
     text-align: center;
@@ -39,6 +31,30 @@
 
       span {
         color: #39c4ca;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .page-banner {
+    .content {
+      background-color: rgba($color: #ffffff, $alpha: 0.75);
+      padding: 32px;
+      .title {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .page-banner {
+    .content {
+      background-color: rgba($color: #ffffff, $alpha: 0.75);
+      padding: 32px;
+      .title {
+        margin-bottom: 8px;
       }
     }
   }

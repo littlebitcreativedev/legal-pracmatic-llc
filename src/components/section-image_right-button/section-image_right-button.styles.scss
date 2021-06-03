@@ -1,4 +1,4 @@
-.section-image_right {
+.section-image_right-button {
   height: 640px;
   padding: 80px 0;
   position: relative;
@@ -43,8 +43,9 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .section-image_right {
-    padding: 40px 0;
+  .section-image_right-button {
+    height: 560px;
+    padding-top: 0;
     .image {
       width: 100%;
     }
@@ -52,8 +53,7 @@
     .section-content {
       height: 398px;
       width: 100%;
-      left: 20px;
-      right: 0;
+      left: 0;
 
       .inner-container {
         padding: 0;
@@ -76,7 +76,7 @@
 }
 
 @media only screen and (min-width: 600px) {
-  .section-image_right {
+  .section-image_right-button {
     padding: 40px 0;
     .section-content {
       height: 398px;
@@ -86,7 +86,7 @@
       .inner-container {
         padding: 50px 0 0 50px;
         .section-text {
-          margin-bottom: 48px;
+          margin-bottom: 32px;
 
           p {
             width: 80%;
@@ -98,7 +98,7 @@
 }
 
 @media only screen and (min-width: 992px) {
-  .section-image_right {
+  .section-image_right-button {
     .section-content {
       height: 360px;
       width: 600px;
@@ -111,7 +111,7 @@
 }
 
 @media only screen and (min-width: 1124px) {
-  .section-image_right {
+  .section-image_right-button {
     .section-content {
       width: 800px;
     }

@@ -8,7 +8,7 @@ import CustomButton from '../custom-button/custom-button.component';
 import './section-image_right-button.styles.scss';
 
 const SectionImageRightButton = ({ imageUrl, sectionHeading, text, routeName, linkName }) => (
-  <div className="section-image_right">
+  <div className="section-image_right-button">
     <div className="section-content stack">
       <div className="inner-container">
         <div className="section-text">

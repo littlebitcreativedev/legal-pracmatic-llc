@@ -17,13 +17,13 @@ const AboutPage = ({ location }) => (
   <>
     <SEO title="About Us" />
     <div className="about-us">
-      <PageBanner
-        title="About Us"
-        imageUrl="https://i.ibb.co/ykJD8mm/contact-page-banner.jpg"
-        altText="blonde business woman with glasses talking on cellphone."
-        location={location}
-      />
       <Container>
+        <PageBanner
+          title="About Us"
+          imageUrl="https://i.ibb.co/ykJD8mm/contact-page-banner.jpg"
+          altText="blonde business woman with glasses talking on cellphone."
+          location={location}
+        />
         <AboutUsIntroduction />
       </Container>
       <CallToAction />

@@ -22,12 +22,11 @@ const PageBanner = ({ title, imageUrl, altText, location }) => {
   const pathnames = currentLocation.pathname.split('/').filter((x) => x);
 
   return (
-    <div className="page-banner">
-      <div
-        className="image"
-        style={{ backgroundImage: `url('https://i.ibb.co/Qdptpyx/page-banner-image.png')` }}
-        alt={altText}
-      />
+    <div
+      className="page-banner"
+      style={{ backgroundImage: `url('https://i.ibb.co/Qdptpyx/page-banner-image.png')` }}
+      alt={altText}
+    >
       <div className="content">
         <h1 className="title">{title}</h1>
         <div className="breadcrumb-container">

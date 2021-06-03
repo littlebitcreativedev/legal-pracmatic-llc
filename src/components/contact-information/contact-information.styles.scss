@@ -39,3 +39,14 @@
     }
   }
 }
+
+@media only screen and (min-width: 600px) {
+  .contact-information {
+    .contact-card {
+      height: 181px;
+      .contact-card__content {
+        padding: 24px 24px;
+      }
+    }
+  }
+}

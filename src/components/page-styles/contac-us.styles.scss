@@ -1,7 +1,13 @@
 .contact-us {
-  .section-contact__form {
+  .section-contact {
     padding-top: 80px;
     padding-bottom: 80px;
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap-reverse;
+    }
     .section-content {
       padding: 0 36px 36px;
 
@@ -31,9 +37,10 @@
 
 @media only screen and (max-width: 600px) {
   .contact-us {
-    .section-contact__form {
+    .section-contact {
+      padding-top: 0;
       .section-content {
-        margin-top: 24px;
+        margin-bottom: 48px;
         padding: 0;
       }
     }
@@ -42,9 +49,9 @@
 
 @media only screen and (min-width: 600px) {
   .contact-us {
-    .section-contact__form {
+    .section-contact {
       .section-content {
-        margin-top: 24px;
+        margin-bottom: 48px;
         padding: 0;
       }
     }
@@ -53,7 +60,7 @@
 
 @media only screen and (min-width: 960px) {
   .contact-us {
-    .section-contact__form {
+    .section-contact {
       .section-content {
         margin-top: 0;
         padding: 0;
