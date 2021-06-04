@@ -15,6 +15,9 @@ const breadcrumbNameMap = {
   '/services/conciliations': 'Conciliations',
   '/about-us': 'About Us',
   '/contact-us': 'Contact Us',
+  '/terms-of-use': 'Terms and Conditions',
+  '/privacy-policy': 'Privacy Policy',
+  '/cookies': 'Cookies',
 };
 
 const PageBanner = ({ title, imageUrl, altText, location }) => {
