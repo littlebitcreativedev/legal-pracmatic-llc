@@ -21,13 +21,13 @@ const ServicesPage = ({ location }) => (
   <>
     <SEO title="Services | Legal Pracmatic, LLC" />
     <div className="services">
-      <PageBanner
-        title="Our Services"
-        imageUrl="https://i.ibb.co/ykJD8mm/contact-page-banner.jpg"
-        altText="blonde business woman with glasses talking on cellphone."
-        location={location}
-      />
       <Container>
+        <PageBanner
+          title="Our Services"
+          imageUrl="https://i.ibb.co/ykJD8mm/contact-page-banner.jpg"
+          altText="blonde business woman with glasses talking on cellphone."
+          location={location}
+        />
         <ServiceIntroduction />
         <ServiceDescriptions />
         <ClientGuarantee />

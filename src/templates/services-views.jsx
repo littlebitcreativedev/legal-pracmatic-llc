@@ -19,13 +19,13 @@ const ServicesTemplate = ({ data, location }) => (
   <>
     <SEO title={data.markdownRemark.frontmatter.title} />
     <div className="service-template">
-      <PageBanner
-        title={data.markdownRemark.frontmatter.title}
-        imageUrl="https://i.ibb.co/ykJD8mm/contact-page-banner.jpg"
-        altText="blonde business woman with glasses talking on cellphone."
-        location={location}
-      />
       <Container>
+        <PageBanner
+          title={data.markdownRemark.frontmatter.title}
+          imageUrl="https://i.ibb.co/ykJD8mm/contact-page-banner.jpg"
+          altText="blonde business woman with glasses talking on cellphone."
+          location={location}
+        />
         <ServiceView service={data.markdownRemark} />
         <ClientGuarantee />
       </Container>

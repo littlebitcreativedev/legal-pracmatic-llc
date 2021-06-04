@@ -10,7 +10,7 @@ import PageBanner from '../components/page-banner/page-banner.component';
 // styles
 import '../components/page-styles/privacy-policy.styles.scss';
 
-const PrivacyPage = () => (
+const PrivacyPage = ({ location }) => (
   <>
     <SEO title="Privacy Policy | Legal Pracmatic, LLC" />
     <Container>

@@ -10,7 +10,7 @@ import PageBanner from '../components/page-banner/page-banner.component';
 // styles
 import '../components/page-styles/terms-of-use.styles.scss';
 
-const TermsPage = () => (
+const TermsPage = ({ location }) => (
   <>
     <SEO title="Terms and Conditions  | Legal Pracmatic, LLC" />
     <Container>
