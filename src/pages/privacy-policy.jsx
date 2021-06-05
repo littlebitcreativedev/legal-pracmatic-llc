@@ -1,4 +1,5 @@
 import React from 'react';
+import { FormattedMessage, injectIntl } from 'gatsby-plugin-intl';
 
 // material ui components
 import Container from '@material-ui/core/Container';
@@ -10,13 +11,13 @@ import PageBanner from '../components/page-banner/page-banner.component';
 // styles
 import '../components/page-styles/privacy-policy.styles.scss';
 
-const PrivacyPage = ({ location }) => (
+const PrivacyPage = ({ location, intl }) => (
   <>
-    <SEO title="Privacy Policy | Legal Pracmatic, LLC" />
+    <SEO lang={intl.locale} title={intl.formatMessage({ id: 'privacy-policy' })} />
     <Container>
       <div className="privacy-policy">
         <PageBanner
-          title="Privacy Policy"
+          title={intl.formatMessage({ id: 'privacy-policy' })}
           imageUrl="https://i.ibb.co/ykJD8mm/contact-page-banner.jpg"
           altText=""
           location={location}
@@ -473,4 +474,4 @@ const PrivacyPage = ({ location }) => (
   </>
 );
 
-export default PrivacyPage;
+export default injectIntl(PrivacyPage);

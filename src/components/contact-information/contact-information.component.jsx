@@ -1,4 +1,5 @@
-import * as React from 'react';
+import React from 'react';
+import { FormattedMessage, injectIntl } from 'gatsby-plugin-intl';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
@@ -21,7 +22,7 @@ const envelope = <FontAwesomeIcon icon={faEnvelope} />;
 const whatsapp = <FontAwesomeIcon icon={faWhatsapp} />;
 const marker = <FontAwesomeIcon icon={faMapMarkerAlt} />;
 
-const ContactInformation = () => (
+const ContactInformation = ({ intl }) => (
   <div
     className="contact-information"
     style={{ backgroundImage: `url("https://i.ibb.co/59cVmdy/street-map.png")` }}
@@ -32,7 +33,9 @@ const ContactInformation = () => (
         <Grid item xs={12} sm={4}>
           <Card className="contact-card">
             <CardContent className="contact-card__content">
-              <h4>Contact Details</h4>
+              <h4>
+                <FormattedMessage id="contactDetails_contactCard" />
+              </h4>
               <div>
                 <span className="title">{marker}</span>
                 <span className="data">Denver, Colorado USA</span>
@@ -55,18 +58,30 @@ const ContactInformation = () => (
         <Grid item xs={12} sm={4}>
           <Card className="contact-card">
             <CardContent className="contact-card__content">
-              <h4>Opening Hours</h4>
+              <h4>
+                <FormattedMessage id="openingHours_contactCard" />
+              </h4>
               <div>
-                <span className="title">Monday - Friday:</span>
+                <span className="title">
+                  <FormattedMessage id="monday_friday" />:
+                </span>
                 <span className="data">8:00am - 5:00pm</span>
               </div>
               <div>
-                <span className="title">Saturday:</span>
-                <span className="data">Closed</span>
+                <span className="title">
+                  <FormattedMessage id="saturday" />:
+                </span>
+                <span className="data">
+                  <FormattedMessage id="closed" />
+                </span>
               </div>
               <div>
-                <span className="title">Sunday:</span>
-                <span className="data">Closed</span>
+                <span className="title">
+                  <FormattedMessage id="sunday" />:
+                </span>
+                <span className="data">
+                  <FormattedMessage id="closed" />
+                </span>
               </div>
             </CardContent>
           </Card>
@@ -76,4 +91,4 @@ const ContactInformation = () => (
   </div>
 );
 
-export default ContactInformation;
+export default injectIntl(ContactInformation);

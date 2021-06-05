@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'gatsby';
+import { Link, useIntl, FormattedMessage } from 'gatsby-plugin-intl';
 
 // material ui components
 import Container from '@material-ui/core/Container';
@@ -18,6 +18,9 @@ const accentColor = {
 
 const HeaderBottom = () => {
   const [toggle, setToggle] = useState(false);
+  const intl = useIntl();
+  const locale = intl.locale !== 'en' ? `/${intl.locale}` : '';
+
   console.log(toggle);
 
   const handleToggle = () => {
@@ -28,7 +31,7 @@ const HeaderBottom = () => {
     <Container>
       <div className="header-bottom">
         <div className="header-bottom_left">
-          <Logo routeName="/" />
+          <Logo routeName={`${locale}/`} />
         </div>
         <div className={`header-bottom__right ${toggle ? 'visible' : ''}`}>
           <div className="menu">
@@ -38,7 +41,7 @@ const HeaderBottom = () => {
               to="/"
               onClick={handleToggle}
             >
-              HOME
+              {intl.formatMessage({ id: 'home' }).toUpperCase()}
             </Link>
             <Link
               className="navigation-link"
@@ -46,7 +49,7 @@ const HeaderBottom = () => {
               to="/about-us"
               onClick={handleToggle}
             >
-              ABOUT US
+              {intl.formatMessage({ id: 'about-us' }).toUpperCase()}
             </Link>
             <Link
               className="navigation-link"
@@ -54,7 +57,7 @@ const HeaderBottom = () => {
               to="/services"
               onClick={handleToggle}
             >
-              SERVICES
+              {intl.formatMessage({ id: 'services' }).toUpperCase()}
             </Link>
             <Link
               className="navigation-link"
@@ -62,14 +65,21 @@ const HeaderBottom = () => {
               to="/contact-us"
               onClick={handleToggle}
             >
-              CONTACT US
+              {intl.formatMessage({ id: 'contact-us' }).toUpperCase()}
             </Link>
-            <CustomButton routeName="contact-us" linkName="GET QUOTE" />
+            <CustomButton
+              routeName={`${locale}/contact-us`}
+              linkName={intl.formatMessage({ id: 'get-quote' })}
+            />
           </div>
           <HeaderTop className="header-top__mobile" />
         </div>
         <div className="hide">
-          <div className={`hamburger-menu ${toggle ? 'cross' : ''}`} onClick={handleToggle} onKeyDown={handleToggle}>
+          <div
+            className={`hamburger-menu ${toggle ? 'cross' : ''}`}
+            onClick={handleToggle}
+            onKeyDown={handleToggle}
+          >
             <div className="bars bar-1" />
             <div className="bars bar-2" />
             <div className="bars bar-3" />

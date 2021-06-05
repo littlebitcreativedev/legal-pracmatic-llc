@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useState } from 'react';
-import { navigate } from 'gatsby-link';
+import { navigate, FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 import emailjs from 'emailjs-com';
 
 // material ui components
@@ -22,6 +22,7 @@ import './contact-form.styles.scss';
 
 const ContactForm = () => {
   const [state, setState] = useState({});
+  const intl = useIntl();
 
   const handleChange = (event) => {
     setState({
@@ -55,7 +56,10 @@ const ContactForm = () => {
           fullWidth
           className="form-input small-width"
           id="outlined-basic"
-          label="First Name"
+          label={intl.formatMessage({
+            id: 'firstName_input',
+            defaultMessage: 'First Name',
+          })}
           type="text"
           name="firstName"
           variant="outlined"
@@ -66,7 +70,10 @@ const ContactForm = () => {
           fullWidth
           className="form-input small-width"
           id="outlined-basic"
-          label="Last Name"
+          label={intl.formatMessage({
+            id: 'lastName_input',
+            defaultMessage: 'Last Name',
+          })}
           type="text"
           name="lastName"
           variant="outlined"
@@ -79,7 +86,10 @@ const ContactForm = () => {
           fullWidth
           className="form-input small-width"
           id="outlined-basic"
-          label="Email"
+          label={intl.formatMessage({
+            id: 'email_input',
+            defaultMessage: 'Email',
+          })}
           type="email"
           name="email"
           variant="outlined"
@@ -90,7 +100,10 @@ const ContactForm = () => {
           fullWidth
           className="form-input small-width"
           id="outlined-basic"
-          label="Phone number"
+          label={intl.formatMessage({
+            id: 'phoneNumber_input',
+            defaultMessage: 'Phone Number',
+          })}
           type="text"
           name="phoneNumber"
           variant="outlined"
@@ -103,15 +116,29 @@ const ContactForm = () => {
           select
           fullWidth
           name="service"
-          label="Services"
+          label={intl.formatMessage({
+            id: 'services',
+            defaultMessage: 'Services',
+          })}
           onBlur={handleChange}
           helperText="Please select a service"
           variant="outlined"
         >
-          <MenuItem value="translations">Translation</MenuItem>
-          <MenuItem value="notary-public">Notary Public</MenuItem>
-          <MenuItem value="document-prep">Legal Document Preparation</MenuItem>
-          <MenuItem value="conciliations">Conciliation</MenuItem>
+          <MenuItem value="translations">
+            <FormattedMessage id="translations" defaultMessage="Translation" />
+          </MenuItem>
+          <MenuItem value="notary-public">
+            <FormattedMessage id="notary-public" defaultMessage="Notary Public" />
+          </MenuItem>
+          <MenuItem value="document-prep">
+            <FormattedMessage
+              id="document-preparation"
+              defaultMessage="Legal Document Preparation"
+            />
+          </MenuItem>
+          <MenuItem value="conciliations">
+            <FormattedMessage id="conciliations" defaultMessage="Conciliations" />
+          </MenuItem>
         </TextField>
       </Grid>
       <Grid item className="form-row">
@@ -120,7 +147,10 @@ const ContactForm = () => {
           fullWidth
           multiline
           id="outlined-basic"
-          label="Message"
+          label={intl.formatMessage({
+            id: 'message_input',
+            defaultMessage: 'Message',
+          })}
           type="text"
           rows="10"
           cols="30"
@@ -130,7 +160,7 @@ const ContactForm = () => {
         />
       </Grid>
       <Button type="submit" size="large">
-        SEND
+        <FormattedMessage id="submit_button" defaultMessage="SEND" />
       </Button>
     </form>
   );

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { FormattedMessage, injectIntl } from 'gatsby-plugin-intl';
 
 // material ui components
 import Container from '@material-ui/core/Container';
@@ -10,13 +11,13 @@ import PageBanner from '../components/page-banner/page-banner.component';
 // styles
 import '../components/page-styles/terms-of-use.styles.scss';
 
-const TermsPage = ({ location }) => (
+const TermsPage = ({ location, intl }) => (
   <>
-    <SEO title="Terms and Conditions  | Legal Pracmatic, LLC" />
+    <SEO lang={intl.locale} title={intl.formatMessage({ id: 'terms-of-use' })} />
     <Container>
       <div className="terms-page">
         <PageBanner
-          title="Terms and Conditions"
+          title={intl.formatMessage({ id: 'terms-of-use' })}
           imageUrl="https://i.ibb.co/ykJD8mm/contact-page-banner.jpg"
           altText=""
           location={location}
@@ -284,4 +285,4 @@ const TermsPage = ({ location }) => (
   </>
 );
 
-export default TermsPage;
+export default injectIntl(TermsPage);

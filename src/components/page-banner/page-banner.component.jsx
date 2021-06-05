@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, useIntl } from 'gatsby-plugin-intl';
 
 // material ui componets
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
@@ -8,21 +8,33 @@ import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import './page-banner.styles.scss';
 
 const breadcrumbNameMap = {
-  '/services': 'Services',
-  '/services/translations': 'Translations',
-  '/services/notary-public': 'Notary Public',
-  '/services/document-preparation': 'Document Preparation',
-  '/services/conciliations': 'Conciliations',
-  '/about-us': 'About Us',
-  '/contact-us': 'Contact Us',
-  '/terms-of-use': 'Terms and Conditions',
-  '/privacy-policy': 'Privacy Policy',
-  '/cookies': 'Cookies',
+  '/en/services': 'Services',
+  '/en/services/translations': 'Translations',
+  '/en/services/notary-public': 'Notary Public',
+  '/en/services/document-preparation': 'Document Preparation',
+  '/en/services/conciliations': 'Conciliations',
+  '/en/about-us': 'About Us',
+  '/en/contact-us': 'Contact Us',
+  '/en/terms-of-use': 'Terms and Conditions',
+  '/en/privacy-policy': 'Privacy Policy',
+  '/en/cookies': 'Cookies',
+  '/es/services': 'Servicios',
+  '/es/services/translations': 'Traducciones',
+  '/es/services/notary-public': 'Notario',
+  '/es/services/document-preparation': 'Preparación de Documentos',
+  '/es/services/conciliations': 'Conciliaciones',
+  '/es/about-us': 'Sobre Nosotros',
+  '/es/contact-us': 'Contacto',
+  '/es/terms-of-use': 'Términos y Condiciones',
+  '/es/privacy-policy': 'Política de Privacidad',
+  '/es/cookies': 'Cookies',
 };
 
 const PageBanner = ({ title, imageUrl, altText, location }) => {
   const currentLocation = location;
   const pathnames = currentLocation.pathname.split('/').filter((x) => x);
+  const intl = useIntl();
+  const locale = intl.locale !== 'en' ? `/${intl.locale}` : '';
 
   return (
     <div
@@ -35,7 +47,7 @@ const PageBanner = ({ title, imageUrl, altText, location }) => {
         <div className="breadcrumb-container">
           <Breadcrumbs aria-label="breadcrumb">
             <Link className="breadcrumb-link__color" to="/">
-              Home
+              {intl.formatMessage({ id: 'home' })}
             </Link>
             {pathnames.map((value, index) => {
               const last = index === pathnames.length - 1;
@@ -45,9 +57,10 @@ const PageBanner = ({ title, imageUrl, altText, location }) => {
                   {breadcrumbNameMap[to]}
                 </span>
               ) : (
-                <Link className="breadcrumb-current" to={to} key={to}>
-                  {breadcrumbNameMap[to]}
-                </Link>
+                ''
+                // <Link className="breadcrumb-current" to={to} key={to}>
+                //   {breadcrumbNameMap[to]}
+                // </Link>
               );
             })}
           </Breadcrumbs>

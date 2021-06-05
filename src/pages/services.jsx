@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import * as React from 'react';
+import { FormattedMessage, injectIntl } from 'gatsby-plugin-intl';
 
 // material ui components
 import Container from '@material-ui/core/Container';
@@ -17,13 +18,13 @@ import ClientGuarantee from '../components/client-guarantees/client-guarantees.c
 import '../components/page-styles/services.styles.scss';
 
 // eslint-disable-next-line react/prop-types
-const ServicesPage = ({ location }) => (
+const ServicesPage = ({ location, intl }) => (
   <>
-    <SEO title="Services | Legal Pracmatic, LLC" />
+    <SEO lang={intl.locale} title={intl.formatMessage({ id: 'services'})} />
     <div className="services">
       <Container>
         <PageBanner
-          title="Our Services"
+          title={intl.formatMessage({ id: 'services'})}
           imageUrl="https://i.ibb.co/ykJD8mm/contact-page-banner.jpg"
           altText="blonde business woman with glasses talking on cellphone."
           location={location}
@@ -38,4 +39,4 @@ const ServicesPage = ({ location }) => (
   </>
 );
 
-export default ServicesPage;
+export default injectIntl(ServicesPage);

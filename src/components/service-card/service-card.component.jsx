@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link } from 'gatsby-plugin-intl';
 
 // material ui components
 import Grid from '@material-ui/core/Grid';

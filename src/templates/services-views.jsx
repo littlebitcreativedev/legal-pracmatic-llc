@@ -1,5 +1,6 @@
 import { graphql } from 'gatsby';
 import React from 'react';
+import { FormattedMessage, injectIntl } from 'gatsby-plugin-intl';
 
 // material ui components
 import Container from '@material-ui/core/Container';
@@ -15,7 +16,7 @@ import CallToAction from '../components/call-to-action/call-to-action.component'
 // styles
 import './services-views.styles.scss';
 
-const ServicesTemplate = ({ data, location }) => (
+const ServicesTemplate = ({ data, location, intl }) => (
   <>
     <SEO title={data.markdownRemark.frontmatter.title} />
     <div className="service-template">
@@ -35,7 +36,7 @@ const ServicesTemplate = ({ data, location }) => (
   </>
 );
 
-export default ServicesTemplate;
+export default injectIntl(ServicesTemplate);
 
 export const query = graphql`
   query($slug: String!) {

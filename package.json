@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Stefanie Aldana <littlebitcreative@gmail.com>",
   "dependencies": {
+    "@formatjs/cli": "^4.2.18",
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "@fortawesome/free-regular-svg-icons": "^5.15.3",
@@ -22,6 +23,7 @@
     "gatsby-plugin-fontawesome-css": "^1.1.0",
     "gatsby-plugin-gatsby-cloud": "^2.2.0",
     "gatsby-plugin-image": "^1.2.1",
+    "gatsby-plugin-intl": "^0.3.3",
     "gatsby-plugin-layout": "^2.3.0",
     "gatsby-plugin-manifest": "^3.2.0",
     "gatsby-plugin-material-ui": "^3.0.1",
@@ -63,6 +65,7 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "deploy": "gatsby build && gh-pages -d public -b master",
-    "dev-m": "gatsby develop -H 0.0.0.0 -p 8000"
+    "dev-m": "gatsby develop -H 0.0.0.0 -p 8000",
+    "extract": "formatjs extract"
   }
 }

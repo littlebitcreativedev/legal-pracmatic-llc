@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { FormattedMessage, injectIntl } from 'gatsby-plugin-intl';
 
 // material ui components
 import Container from '@material-ui/core/Container';
@@ -13,15 +14,15 @@ import CallToAction from '../components/call-to-action/call-to-action.component'
 import '../components/page-styles/about-us.styles.scss';
 
 // eslint-disable-next-line react/prop-types
-const AboutPage = ({ location }) => (
+const AboutPage = ({ location, intl }) => (
   <>
-    <SEO title="About Us" />
+    <SEO lang={intl.locale} title={intl.formatMessage({ id: 'about-us' })} />
     <div className="about-us">
       <Container>
         <PageBanner
-          title="About Us"
+          title={intl.formatMessage({ id: 'about-us' })}
           imageUrl="https://i.ibb.co/ykJD8mm/contact-page-banner.jpg"
-          altText="blonde business woman with glasses talking on cellphone."
+          altText=""
           location={location}
         />
         <AboutUsIntroduction />
@@ -31,4 +32,4 @@ const AboutPage = ({ location }) => (
   </>
 );
 
-export default AboutPage;
+export default injectIntl(AboutPage);

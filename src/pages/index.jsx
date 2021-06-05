@@ -1,4 +1,5 @@
-import * as React from 'react';
+import React from 'react';
+import { FormattedMessage, injectIntl } from 'gatsby-plugin-intl';
 
 // material ui components
 import Container from '@material-ui/core/Container';
@@ -16,9 +17,9 @@ import '../components/page-styles/global.styles.scss';
 import '../index.scss';
 
 // markup
-const IndexPage = () => (
+const IndexPage = ({ intl }) => (
   <>
-    <SEO title="Home" />
+    <SEO lang={intl.locale} title={intl.formatMessage({ id: 'home' })} />
     <div className="homepage">
       <Container>
         <CarouselBanner />
@@ -50,4 +51,4 @@ const IndexPage = () => (
   </>
 );
 
-export default IndexPage;
+export default injectIntl(IndexPage);

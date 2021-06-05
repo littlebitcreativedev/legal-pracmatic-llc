@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { navigate } from 'gatsby-link';
+import { navigate, FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 import emailjs from 'emailjs-com';
 
 // material ui components
@@ -15,6 +15,7 @@ import './section-contact.styles.scss';
 
 const SectionContact = () => {
   const [state, setState] = useState({});
+  const intl = useIntl();
 
   const handleChange = (event) => {
     setState({
@@ -59,7 +60,7 @@ const SectionContact = () => {
                   fullWidth
                   className="form-input small-width"
                   id="outlined-basic"
-                  label="First Name"
+                  label={intl.formatMessage({ id: 'firstName_input' })}
                   type="text"
                   name="firstName"
                   variant="outlined"
@@ -70,7 +71,7 @@ const SectionContact = () => {
                   fullWidth
                   className="form-input small-width"
                   id="outlined-basic"
-                  label="Last Name"
+                  label={intl.formatMessage({ id: 'lastName_input' })}
                   type="text"
                   name="lastName"
                   variant="outlined"
@@ -83,7 +84,7 @@ const SectionContact = () => {
                   fullWidth
                   className="form-input"
                   id="outlined-basic"
-                  label="Email"
+                  label={intl.formatMessage({ id: 'email_input' })}
                   type="email"
                   name="email"
                   variant="outlined"
@@ -96,7 +97,7 @@ const SectionContact = () => {
                   fullWidth
                   className="form-input"
                   id="outlined-basic"
-                  label="Phone number"
+                  label={intl.formatMessage({ id: 'phoneNumber_input' })}
                   type="text"
                   name="phoneNumber"
                   variant="outlined"
@@ -104,24 +105,23 @@ const SectionContact = () => {
                 />
               </Grid>
               <Button type="submit" size="large">
-                SEND
+              <FormattedMessage id="submit_button" />
               </Button>
             </form>
           </Grid>
           <Grid item xs={12} md={5}>
             <div className="message">
-              <h2>Ready to get started?</h2>
+              <h2><FormattedMessage id="heading_contactPage" /></h2>
               <div>
                 <p>
-                  Give us a call, a text, or an email anytime. We endeavour to answer all enquiries
-                  within 24hrs on business days.
+                <FormattedMessage id="message_contactDetails" />
                 </p>
                 <div className="contact-details">
-                  <span className="bold">Email:</span>
+                  <span className="bold"><FormattedMessage id="email_contactDetails" /></span>
                   <span>contact@legalpracmatic.com</span>
                 </div>
                 <div className="contact-details">
-                  <span className="bold">Phone:</span>
+                  <span className="bold"><FormattedMessage id="phone_contactDetials" /></span>
                   <span>+ (000) 000 - 0000</span>
                 </div>
                 <div className="contact-details">
