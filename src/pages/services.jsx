@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import * as React from 'react';
-import { FormattedMessage, injectIntl } from 'gatsby-plugin-intl';
+import { injectIntl } from 'gatsby-plugin-intl';
 
 // material ui components
 import Container from '@material-ui/core/Container';
@@ -26,15 +26,15 @@ const ServicesPage = ({ location, intl }) => (
         <PageBanner
           title={intl.formatMessage({ id: 'services'})}
           imageUrl="https://i.ibb.co/ykJD8mm/contact-page-banner.jpg"
-          altText="blonde business woman with glasses talking on cellphone."
+          altText=""
           location={location}
         />
-        <ServiceIntroduction />
-        <ServiceDescriptions />
-        <ClientGuarantee />
+        <ServiceIntroduction intl={intl} />
+        <ServiceDescriptions intl={intl} />
+        <ClientGuarantee intl={intl} />
       </Container>
       <SectionContact />
-      <CallToAction />
+      <CallToAction intl={intl} />
     </div>
   </>
 );

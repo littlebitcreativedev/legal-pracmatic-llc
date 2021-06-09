@@ -2,7 +2,6 @@
   .card {
     padding-top: 24px;
     display: flex;
-    //justify-content: center;
     align-items: center;
     text-align: center;
     height: 100%;
@@ -21,6 +20,7 @@
     }
 
     p {
+      margin: 0 auto;
       width: 200px;
       font-size: 14px;
       color: #a8abb3;

@@ -1,4 +1,5 @@
 ---
+lang: en
 slug: "/services/notary-public"
 title: "Notary Public"
 image: "https://i.ibb.co/1qzGf65/under-construction.png"

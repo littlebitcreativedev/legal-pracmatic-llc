@@ -17,10 +17,10 @@ import ClockIcon from '../../assets/clock.svg';
 import PaymentIcon from '../../assets/payment.svg';
 import SecureDocumentIcon from '../../assets/secure-document.svg';
 
-const ClientGuarantee = () => (
+const ClientGuarantee = ({ intl }) => (
   <div className="client-guarantee">
     <div className="section-heading">
-      <h3 className="heading">We provide our clients:</h3>
+      <h3 className="heading">{intl.formatMessage({ id: 'client-guarantees.heading' })}:</h3>
     </div>
     <Grid container spacing={3}>
       <Grid item xs={12} md={3} className="card-container">
@@ -31,8 +31,8 @@ const ClientGuarantee = () => (
             </div>
           </Icon>
           <CardContent>
-            <h4>Reliability</h4>
-            <p>Complete transparancy. No hidden fees or information about our services.</p>
+            <h4>{intl.formatMessage({ id: 'client-guarantees.reliability' })}</h4>
+            <p>{intl.formatMessage({ id: 'client-guarantees.reliability_text' })}</p>
           </CardContent>
         </Card>
       </Grid>
@@ -44,11 +44,8 @@ const ClientGuarantee = () => (
             </div>
           </Icon>
           <CardContent>
-            <h4>100% Satisfaction</h4>
-            <p>
-              We are not satisfied until you are satisfied. We work with you to guarantee 100%
-              satisfaction.
-            </p>
+            <h4>{intl.formatMessage({ id: 'client-guarantees.satisfaction' })}</h4>
+            <p>{intl.formatMessage({ id: 'client-guarantees.satisfaction_text' })}</p>
           </CardContent>
         </Card>
       </Grid>
@@ -60,11 +57,8 @@ const ClientGuarantee = () => (
             </div>
           </Icon>
           <CardContent>
-            <h4>100% Security</h4>
-            <p>
-              We ensure that all personal and confidential information does not reach anyone but the
-              intended receiver.
-            </p>
+            <h4>{intl.formatMessage({ id: 'client-guarantees.security' })}</h4>
+            <p>{intl.formatMessage({ id: 'client-guarantees.security_text' })}</p>
           </CardContent>
         </Card>
       </Grid>
@@ -76,11 +70,8 @@ const ClientGuarantee = () => (
             </div>
           </Icon>
           <CardContent>
-            <h4>Fast Turnaround</h4>
-            <p>
-              We aim to deliver fast and quality work. Turnaround times depend on complexity of the
-              order.
-            </p>
+            <h4>{intl.formatMessage({ id: 'client-guarantees.turnaround' })}</h4>
+            <p>{intl.formatMessage({ id: 'client-guarantees.turnaround_text' })}</p>
           </CardContent>
         </Card>
       </Grid>

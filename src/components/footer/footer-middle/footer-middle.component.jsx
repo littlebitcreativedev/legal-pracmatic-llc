@@ -10,18 +10,18 @@ import Navigation from '../../navigation/navigation.component';
 // styles
 import './footer-middle.styles.scss';
 
-const FooterMiddle = () => (
+const FooterMiddle = ({ intl }) => (
   <Grid container className="footer-middle" spacing={3}>
     <Grid item xs={12} sm={6} md={3} className="footer-item footer-item__one">
       <div>
-        <h4>Contact</h4>
+        <h4>{intl.formatMessage({ id: 'footer.contact_footer' })}</h4>
         <div className="content">
           <div className="item">
             <span className="title">Hours:</span>
-            <span>Monday - Friday 8:00am - 5:00pm</span>
+            <span>{intl.formatMessage({ id: 'monday_friday' })} 8:00am - 5:00pm</span>
           </div>
           <div className="item">
-            <span className="title">Phone:</span>
+            <span className="title">{intl.formatMessage({ id: 'phone_contactDetails' })}</span>
             <span>(000) 000 - 0000</span>
           </div>
           <div className="item">
@@ -33,29 +33,41 @@ const FooterMiddle = () => (
     </Grid>
     <Grid item xs={12} sm={6} md={4} className="footer-item footer-item__two">
       <div className="footer-navigation">
-        <h4>About</h4>
+        <h4>{intl.formatMessage({ id: 'footer.about_footer' })}</h4>
         <div className="links">
-          <Navigation routeName="/services" linkName="Services" />
-          <Navigation routeName="/about-us" linkName="Our Company" />
-          <Navigation routeName="/contact-us" linkName="Location" />
+          <Navigation routeName="/services" linkName={intl.formatMessage({ id: 'services' })} />
+          <Navigation
+            routeName="/about-us"
+            linkName={intl.formatMessage({ id: 'footer.company' })}
+          />
+          <Navigation
+            routeName="/contact-us"
+            linkName={intl.formatMessage({ id: 'footer.location' })}
+          />
         </div>
       </div>
       <div className="footer-navigation">
-        <h4>Services</h4>
+        <h4>{intl.formatMessage({ id: 'services' })}</h4>
         <div className="links">
-          <Navigation routeName="/services/translations" linkName="Translations" />
-          <Navigation routeName="/services/notary-public" linkName="Notary Public" />
-          <Navigation routeName="/services/conciliations" linkName="Conciliations" />
+          <Navigation
+            routeName="/services/translations"
+            linkName={intl.formatMessage({ id: 'translations' })}
+          />
+          <Navigation
+            routeName="/services/notary-public"
+            linkName={intl.formatMessage({ id: 'notary-public' })}
+          />
+          <Navigation
+            routeName="/services/conciliations"
+            linkName={intl.formatMessage({ id: 'conciliations' })}
+          />
         </div>
       </div>
     </Grid>
     <Grid item xs={12} md={4} className="footer-item footer-item__three">
       <div>
         <Logo routeName="/" />
-        <p>
-          Ut cum tenetur deserunt voluptatem sit cumque natus. Unde facere aperiam repellat fugit
-          ipsum voluptatem quasi doloremque. Quam ut ea eos.
-        </p>
+        <p>{intl.formatMessage({ id: 'footer.company-description' })}</p>
       </div>
     </Grid>
   </Grid>

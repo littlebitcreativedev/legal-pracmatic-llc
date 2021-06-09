@@ -6,7 +6,7 @@ import CustomButton from '../custom-button/custom-button.component';
 // styles
 import './section-image_left-button.styles.scss';
 
-const SectionImageLeftButtton = ({ imageUrl, sectionHeading, text, routeName }) => (
+const SectionImageLeftButtton = ({ imageUrl, sectionHeading, text, routeName, linkName }) => (
   <div className="section-image_left-button">
     <div
       className="image"
@@ -20,7 +20,7 @@ const SectionImageLeftButtton = ({ imageUrl, sectionHeading, text, routeName }) 
           <h2 className="section-heading">{sectionHeading}</h2>
           <p>{text}</p>
         </div>
-        <CustomButton routeName={routeName} linkName="Learn more" />
+        <CustomButton routeName={routeName} linkName={linkName} />
       </div>
     </div>
   </div>

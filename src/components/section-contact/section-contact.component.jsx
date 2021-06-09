@@ -7,11 +7,32 @@ import Container from '@material-ui/core/Container';
 import TextField from '@material-ui/core/TextField';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
+import { withStyles } from '@material-ui/core/styles';
 
 // components
 
 // styles
 import './section-contact.styles.scss';
+
+const CssTextField = withStyles({
+  root: {
+    '& label.Mui-focused': {
+      color: '#252d40',
+    },
+    '& .MuiOutlinedInput-root': {
+      backgroundColor: '#ffffff',
+      '& fieldset': {
+        borderColor: '#a8abb3',
+      },
+      '&:hover fieldset': {
+        borderColor: '#252d40',
+      },
+      '&.Mui-focused fieldset': {
+        borderColor: '#252d40',
+      },
+    },
+  },
+})(TextField);
 
 const SectionContact = () => {
   const [state, setState] = useState({});
@@ -55,10 +76,10 @@ const SectionContact = () => {
             <form onSubmit={handleSubmit} action="/thank-you/" className="contact-form">
               <input type="hidden" name="contact_number" />
               <Grid item xs className="form-row">
-                <TextField
+                <CssTextField
                   required
                   fullWidth
-                  className="form-input small-width"
+                  className="margin-bottom"
                   id="outlined-basic"
                   label={intl.formatMessage({ id: 'firstName_input' })}
                   type="text"
@@ -66,10 +87,10 @@ const SectionContact = () => {
                   variant="outlined"
                   onBlur={handleChange}
                 />
-                <TextField
+                <CssTextField
                   required
                   fullWidth
-                  className="form-input small-width"
+                  className="margin-bottom"
                   id="outlined-basic"
                   label={intl.formatMessage({ id: 'lastName_input' })}
                   type="text"
@@ -79,10 +100,10 @@ const SectionContact = () => {
                 />
               </Grid>
               <Grid item xs className="form-row">
-                <TextField
+                <CssTextField
                   required
                   fullWidth
-                  className="form-input"
+                  className="margin-bottom"
                   id="outlined-basic"
                   label={intl.formatMessage({ id: 'email_input' })}
                   type="email"
@@ -92,10 +113,10 @@ const SectionContact = () => {
                 />
               </Grid>
               <Grid item xs className="form-row">
-                <TextField
+                <CssTextField
                   required
                   fullWidth
-                  className="form-input"
+                  className="margin-bottom"
                   id="outlined-basic"
                   label={intl.formatMessage({ id: 'phoneNumber_input' })}
                   type="text"
@@ -121,7 +142,7 @@ const SectionContact = () => {
                   <span>contact@legalpracmatic.com</span>
                 </div>
                 <div className="contact-details">
-                  <span className="bold"><FormattedMessage id="phone_contactDetials" /></span>
+                  <span className="bold"><FormattedMessage id="phone_contactDetails" /></span>
                   <span>+ (000) 000 - 0000</span>
                 </div>
                 <div className="contact-details">

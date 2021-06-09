@@ -1,4 +1,5 @@
 import React from 'react';
+import { injectIntl } from 'gatsby-plugin-intl';
 
 // material ui components
 import Container from '@material-ui/core/Container';
@@ -12,16 +13,16 @@ import FooterBottom from './footer-bottom/footer-bottom.component';
 // styles
 import './footer.styles.scss';
 
-const Footer = () => (
+const Footer = ({ intl }) => (
   <div className="footer">
     <Container>
-      <FooterTop />
+      <FooterTop intl={intl} />
       <Divider />
-      <FooterMiddle />
+      <FooterMiddle intl={intl} />
     </Container>
     <Divider />
-    <FooterBottom />
+    <FooterBottom intl={intl} />
   </div>
 );
 
-export default Footer;
+export default injectIntl(Footer);

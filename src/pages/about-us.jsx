@@ -1,5 +1,5 @@
-import * as React from 'react';
-import { FormattedMessage, injectIntl } from 'gatsby-plugin-intl';
+import React from 'react';
+import { injectIntl } from 'gatsby-plugin-intl';
 
 // material ui components
 import Container from '@material-ui/core/Container';
@@ -25,9 +25,9 @@ const AboutPage = ({ location, intl }) => (
           altText=""
           location={location}
         />
-        <AboutUsIntroduction />
+        <AboutUsIntroduction intl={intl} />
       </Container>
-      <CallToAction />
+      <CallToAction intl={intl} />
     </div>
   </>
 );

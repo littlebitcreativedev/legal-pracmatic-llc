@@ -1,5 +1,4 @@
 import React from 'react';
-import { injectIntl, FormattedMessage } from 'gatsby-plugin-intl';
 
 // material ui components
 import Grid from '@material-ui/core/Grid';
@@ -20,37 +19,35 @@ const SectionServices = ({ intl }) => (
   <div className="section-services">
     <div className="section-heading">
       <h2 className="heading">{intl.formatMessage({ id: 'services' })}</h2>
-      <p className="description">
-        Voluptatum quia molestias quis eius ut accusamus debitis consequatur distinctio.
-      </p>
+      <p className="description">{intl.formatMessage({ id: 'carousel-banner.slide2-subheading' })}</p>
     </div>
     <Grid container spacing={3}>
       <ServiceCard
         routeName="/services/translations"
         icon={<TranslationIcon />}
         label={intl.formatMessage({ id: 'translations' })}
-        description="get your English to Spanish, Spanish to English translations."
+        description={intl.formatMessage({ id: 'services-section.card-one' })}
       />
       <ServiceCard
         routeName="/services/notary-public"
         icon={<NotarizationIcon />}
         label={intl.formatMessage({ id: 'notary-public' })}
-        description="virtual & in-person notary services in the state of Colorado."
+        description={intl.formatMessage({ id: 'services-section.card-two' })}
       />
       <ServiceCard
         routeName="/services/document-preparation"
         icon={<DocumentIcon />}
         label={intl.formatMessage({ id: 'document-preparation' })}
-        description="we prepare legal documents in Colombia."
+        description={intl.formatMessage({ id: 'services-section.card-three' })}
       />
       <ServiceCard
         routeName="/services/conciliations"
         icon={<ConciliationIcon />}
         label={intl.formatMessage({ id: 'conciliations' })}
-        description="virtual conciliations for legal matters that can be resolved in Colombia."
+        description={intl.formatMessage({ id: 'services-section.card-four' })}
       />
     </Grid>
   </div>
 );
 
-export default injectIntl(SectionServices);
+export default SectionServices;

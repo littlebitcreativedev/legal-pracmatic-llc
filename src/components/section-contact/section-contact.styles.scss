@@ -15,30 +15,8 @@ $secondaryColor: #a8abb3;
 
   .contact-form {
     .form-row {
-      margin-bottom: 24px;
-      margin-left: 0;
-      .form-input {
-        &.small-width {
-          width: 290px;
-        }
-
-        & label.Mui-focused {
-          color: $secondaryColor;
-        }
-
-        & .MuiOutlinedInput-root {
-          & fieldset {
-            background-color: white;
-          }
-
-          &:hover fieldset {
-            border-color: $primaryColor;
-          }
-
-          &.Mui-focused fieldset {
-            border-color: $secondaryColor;
-          }
-        }
+      .margin-bottom {
+        margin-bottom: 24px;
       }
     }
 
@@ -75,20 +53,6 @@ $secondaryColor: #a8abb3;
 
 @media only screen and (max-width: 600px) {
   .section-contact {
-    .contact-form {
-      .form-row {
-        .form-input {
-          &.small-width {
-            width: 100%;
-
-            &:first-child {
-              margin-bottom: 40px;
-            }
-          }
-        }
-      }
-    }
-
     .message {
       margin-bottom: 48px;
     }
@@ -97,20 +61,6 @@ $secondaryColor: #a8abb3;
 
 @media only screen and (min-width: 600px) {
   .section-contact {
-    .contact-form {
-      .form-row {
-        .form-input {
-          &.small-width {
-            width: 100%;
-
-            &:first-child {
-              margin-bottom: 24px;
-            }
-          }
-        }
-      }
-    }
-
     .message {
       margin-bottom: 48px;
     }

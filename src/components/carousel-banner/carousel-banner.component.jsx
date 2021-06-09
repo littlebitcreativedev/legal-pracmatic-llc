@@ -11,7 +11,7 @@ import CustomButton from '../custom-button/custom-button.component';
 import './carousel-banner.styles.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const CarouselBanner = () => (
+const CarouselBanner = ({ intl }) => (
   <Carousel className="carousel" controls={false}>
     <Carousel.Item className="carousel-item">
       <div
@@ -22,11 +22,11 @@ const CarouselBanner = () => (
       />
       <div className="carousel-caption">
         <Container>
-          <h1 className="carousel-heading">Translations with a human touch</h1>
+          <h1 className="carousel-heading">{intl.formatMessage({ id: 'carousel-banner.slide1-heading' })}</h1>
           <h4 className="carousel-subheading">
-            We offer translations in english and spanish in a practical and simple way
+          {intl.formatMessage({ id: 'carousel-banner.slide1-subheading' })}
           </h4>
-          <CustomButton routeName="/services/translations" linkName="Learn more" />
+          <CustomButton routeName="/services/translations" linkName={intl.formatMessage({ id: 'learn-more' })} />
         </Container>
       </div>
     </Carousel.Item>
@@ -39,11 +39,11 @@ const CarouselBanner = () => (
       />
       <div className="carousel-caption">
         <Container>
-          <h1 className="carousel-heading">Remote and in person legal services</h1>
+          <h1 className="carousel-heading">{intl.formatMessage({ id: 'carousel-banner.slide2-heading' })}</h1>
           <h4 className="carousel-subheading">
-            We offer translations in english and spanish in a practical and simple way
+          {intl.formatMessage({ id: 'carousel-banner.slide2-subheading' })}
           </h4>
-          <CustomButton routeName="/services" linkName="Learn more" />
+          <CustomButton routeName="/services" linkName={intl.formatMessage({ id: 'learn-more' })} />
         </Container>
       </div>
     </Carousel.Item>

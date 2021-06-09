@@ -1,5 +1,15 @@
 .language-options {
-  .MuiButton-iconSizeMedium > *:first-child {
-    font-size: 12px;
+  font-size: 12px;
+  display: flex;
+
+  .language-links {
+    .link {
+      margin-left: 8px;
+      cursor: pointer;
+
+      &:hover {
+        color: #a8abb3;
+      }
+    }
   }
 }

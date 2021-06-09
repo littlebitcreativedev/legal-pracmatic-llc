@@ -22,7 +22,7 @@ const a11yProps = (index) => ({
   'arial-controls': `tabpanel-${index}`,
 });
 
-const ServiceDescriptions = () => {
+const ServiceDescriptions = ({ intl }) => {
   const [value, setValue] = useState(0);
 
   const handleChange = (event, newValue) => {
@@ -42,28 +42,28 @@ const ServiceDescriptions = () => {
         <Tab
           className="service-tab"
           icon={<TranslationIcon />}
-          label="Translations"
+          label={intl.formatMessage({ id: 'translations' })}
           {...a11yProps(0)}
           arial-label="transltations"
         />
         <Tab
           className="service-tab"
           icon={<NotaryIcon />}
-          label="Notary Public"
+          label={intl.formatMessage({ id: 'notary-public' })}
           {...a11yProps(1)}
           arial-label="notary-public"
         />
         <Tab
           className="service-tab"
           icon={<DocumentIcon />}
-          label="Document Preparation"
+          label={intl.formatMessage({ id: 'document-preparation' })}
           {...a11yProps(2)}
           arial-label="document-preparation"
         />
         <Tab
           className="service-tab"
           icon={<ConciliationIcon />}
-          label="Conciliations"
+          label={intl.formatMessage({ id: 'conciliations' })}
           {...a11yProps(3)}
           arial-label="conciliations"
         />
@@ -72,35 +72,37 @@ const ServiceDescriptions = () => {
         <TabPanel value={value} index={0}>
           <SectionImageLeftButton
             imageUrl="https://i.ibb.co/W0n0c2R/woman-laptop-working.png"
-            sectionHeading="Translations"
-            text="Delivering top quality translations is of most importance to us here at Legal Pracmatic, LLC.
-            To ensure this, our translations are carried out and corrected by people who are fluent in both
-            the original text and target language, guaranteeing that the translated content communicates the original 
-            meaning, format and tone."
+            sectionHeading={intl.formatMessage({ id: 'translations' })}
+            text={intl.formatMessage({ id: 'service_page.translation-description' })}
             routeName="/services/translations"
+            linkName={intl.formatMessage({ id: 'learn-more' })}
           />
         </TabPanel>
         <TabPanel value={value} index={1}>
           <SectionImageLeftButton
             imageUrl="https://i.ibb.co/PcTXwdv/notary-public.png"
-            sectionHeading="Notary Public"
-            text="Comming soon!"
+            sectionHeading={intl.formatMessage({ id: 'notary-public' })}
+            text={intl.formatMessage({ id: 'service_page.coming-soon' })}
+            routeName="/services/notary-public"
+            linkName={intl.formatMessage({ id: 'learn-more' })}
           />
         </TabPanel>
         <TabPanel value={value} index={2}>
           <SectionImageLeftButton
             imageUrl="https://i.ibb.co/4mqB2rB/document-preparation.png"
-            sectionHeading="Document Preparation"
-            text="Comming soon!"
+            sectionHeading={intl.formatMessage({ id: 'document-preparation' })}
+            text={intl.formatMessage({ id: 'service_page.coming-soon' })}
             routeName="/services/document-preparations"
+            linkName={intl.formatMessage({ id: 'learn-more' })}
           />
         </TabPanel>
         <TabPanel value={value} index={3}>
           <SectionImageLeftButton
             imageUrl="https://i.ibb.co/cDp76t9/conciliations.png"
-            sectionHeading="Conciliations"
-            text="Comming soon!"
+            sectionHeading={intl.formatMessage({ id: 'conciliations' })}
+            text={intl.formatMessage({ id: 'service_page.coming-soon' })}
             routeName="/services/conciliations"
+            linkName={intl.formatMessage({ id: 'learn-more' })}
           />
         </TabPanel>
       </div>

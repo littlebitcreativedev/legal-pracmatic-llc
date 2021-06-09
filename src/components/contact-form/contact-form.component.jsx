@@ -8,17 +8,31 @@ import TextField from '@material-ui/core/TextField';
 import MenuItem from '@material-ui/core/MenuItem';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
+import { withStyles } from '@material-ui/core/styles';
 
 // components
 
 // styles
 import './contact-form.styles.scss';
 
-/* const encode = (data) => {
-  return Object.keys(data)
-    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    .join('&');
-} */
+const CssTextField = withStyles({
+  root: {
+    '& label.Mui-focused': {
+      color: '#252d40',
+    },
+    '& .MuiOutlinedInput-root': {
+      '& fieldset': {
+        borderColor: '#a8abb3',
+      },
+      '&:hover fieldset': {
+        borderColor: '#252d40',
+      },
+      '&.Mui-focused fieldset': {
+        borderColor: '#252d40',
+      },
+    },
+  },
+})(TextField);
 
 const ContactForm = () => {
   const [state, setState] = useState({});
@@ -51,10 +65,10 @@ const ContactForm = () => {
     <form onSubmit={handleSubmit} action="/thank-you/" className="contact-form">
       <input type="hidden" name="contact_number" />
       <Grid item className="form-row">
-        <TextField
+        <CssTextField
           required
           fullWidth
-          className="form-input small-width"
+          className="margin-bottom"
           id="outlined-basic"
           label={intl.formatMessage({
             id: 'firstName_input',
@@ -65,10 +79,9 @@ const ContactForm = () => {
           variant="outlined"
           onBlur={handleChange}
         />
-        <TextField
+        <CssTextField
           required
           fullWidth
-          className="form-input small-width"
           id="outlined-basic"
           label={intl.formatMessage({
             id: 'lastName_input',
@@ -81,10 +94,10 @@ const ContactForm = () => {
         />
       </Grid>
       <Grid item className="form-row">
-        <TextField
+        <CssTextField
           required
           fullWidth
-          className="form-input small-width"
+          className="margin-bottom"
           id="outlined-basic"
           label={intl.formatMessage({
             id: 'email_input',
@@ -95,10 +108,9 @@ const ContactForm = () => {
           variant="outlined"
           onBlur={handleChange}
         />
-        <TextField
+        <CssTextField
           required
           fullWidth
-          className="form-input small-width"
           id="outlined-basic"
           label={intl.formatMessage({
             id: 'phoneNumber_input',
@@ -111,7 +123,7 @@ const ContactForm = () => {
         />
       </Grid>
       <Grid item className="form-row">
-        <TextField
+        <CssTextField
           required
           select
           fullWidth
@@ -139,10 +151,10 @@ const ContactForm = () => {
           <MenuItem value="conciliations">
             <FormattedMessage id="conciliations" defaultMessage="Conciliations" />
           </MenuItem>
-        </TextField>
+        </CssTextField>
       </Grid>
       <Grid item className="form-row">
-        <TextField
+        <CssTextField
           required
           fullWidth
           multiline

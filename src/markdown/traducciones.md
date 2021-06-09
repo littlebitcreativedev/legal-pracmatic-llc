@@ -1,10 +1,10 @@
 ---
-lang: en
+lang: es
 slug: "/services/translations"
-title: "Translations"
+title: "Traducciones"
 image: "https://i.ibb.co/z5XW5kX/woman-typing-laptop.png"
 imageTwo: "https://i.ibb.co/5jnwvBS/guy-laptop-books.png"
-heading: "Our Translation Services"
+heading: "Nuestros Servicios de Traducción"
 description: "Our translators' main focus is to deliver top quality work ensuring that the translated content communicates the original meaning, format and tone. We use the best tools and references to
 make sure that the translations we provide are appropriate and embody the target language's 
 idiosyncrasies.

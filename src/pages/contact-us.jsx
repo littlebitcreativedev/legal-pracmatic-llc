@@ -47,7 +47,7 @@ const ContactPage = ({ location }) => {
                     </div>
                     <div className="contact-details">
                       <span className="bold">
-                        <FormattedMessage id="phone_contactDetials" />
+                        <FormattedMessage id="phone_contactDetails" />
                       </span>
                       <span>+ (000) 000 - 0000</span>
                     </div>

@@ -83,14 +83,17 @@ $duration: 0.35s;
         }
 
         .header-top_right {
-          .flag-icon {
-            height: 13px;
-            width: 13px;
-            margin-bottom: 2px;
-          }
+          .language-options {
+            justify-content: center;
+            .icon {
+              height: 13px;
+              width: 13px;
+              margin-bottom: 2px;
+            }
 
-          .item {
-            margin: 0;
+            .language-links {
+              margin: 0;
+            }
           }
         }
       }
