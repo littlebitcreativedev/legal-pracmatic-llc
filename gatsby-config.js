@@ -3,7 +3,11 @@ const nodeSass = require('node-sass');
 module.exports = {
   siteMetadata: {
     title: `Legal Pracmatic, LLC`,
+    url: `https://www.legalpracmatic.com/`,
+    description: `Providing translations and legal services with a human touch, 
+    in a practical and simple way, aided by technology for a prompt response to our clients.`,
     author: `@littlebitcreative`,
+    keywords: `translations, notary public, preparacion de documentos, conciliación, traducciones`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -20,11 +24,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Legal Pracmatic, LLC`,
+        short_name: `legalpracmatic`,
+        description: `Providing translations and legal services with a human touch, 
+        in a practical and simple way, aided by technology for a prompt response to our clients.`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#FFFFFF`,
+        theme_color: `#252D40`,
         display: `minimal-ui`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
