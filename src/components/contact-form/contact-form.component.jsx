@@ -79,9 +79,12 @@ const ContactForm = () => {
           variant="outlined"
           onBlur={handleChange}
         />
+      </Grid>
+      <Grid item className="form-row">
         <CssTextField
           required
           fullWidth
+          className="margin-bottom"
           id="outlined-basic"
           label={intl.formatMessage({
             id: 'lastName_input',
@@ -108,9 +111,12 @@ const ContactForm = () => {
           variant="outlined"
           onBlur={handleChange}
         />
+      </Grid>
+      <Grid item className="form-row">
         <CssTextField
           required
           fullWidth
+          className="margin-bottom"
           id="outlined-basic"
           label={intl.formatMessage({
             id: 'phoneNumber_input',
@@ -127,6 +133,7 @@ const ContactForm = () => {
           required
           select
           fullWidth
+          className="margin-bottom"
           name="service"
           label={intl.formatMessage({
             id: 'services',
@@ -158,6 +165,7 @@ const ContactForm = () => {
           required
           fullWidth
           multiline
+          className="margin-bottom"
           id="outlined-basic"
           label={intl.formatMessage({
             id: 'message_input',
