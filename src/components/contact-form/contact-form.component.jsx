@@ -49,7 +49,7 @@ const ContactForm = () => {
     event.preventDefault();
 
     emailjs
-      .sendForm('service_qwtzeqo', 'template_1tbmm5q', event.target, 'user_FdSyEBe7HOJF5AqbK6tmU')
+      .sendForm('service_zzhm7ip', 'template_wy4cvoj', event.target, 'user_SEoW8IFwDkk1VVBUvPlrK')
       .then(
         (result) => {
           navigate(event.target.getAttribute('action'));

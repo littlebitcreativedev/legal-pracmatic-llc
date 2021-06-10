@@ -24,11 +24,11 @@ const HeaderTop = ({ intl }) => (
   <Container>
     <div className="header-top">
       <div className="header-top_left">
-        <Item icon={phone} text="(000) 000 - 0000" />
+        <Item icon={phone} text="+1 (970) 306 - 6650" />
         <Item icon={envelope} text="contact@legalpracmatic.com" />
         <Item
           icon={clock}
-          text={`${intl.formatMessage({ id: 'monday_friday' })}: 8:00am - 5:00pm`}
+          text={`${intl.formatMessage({ id: 'monday_friday' })}: 9:00am - 5:00pm`}
         />
       </div>
       <div className="header-top_right">

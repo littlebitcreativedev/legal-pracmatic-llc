@@ -20,12 +20,12 @@ const CallToAction = ({ intl }) => (
         </Grid>
         <Grid item xs={12} md={4} className="buttons">
           <div>
-            <CustomButton linkName="Whatsapp" routeName="/" />
+            <CustomButton linkName="Whatsapp" routeName="https://wa.me/573187531805" />
           </div>
           <div>
             <CustomButton
               linkName={intl.formatMessage({ id: 'call-to-action.call-now' })}
-              routeName="/"
+              routeName="tel:9703066650"
             />
           </div>
         </Grid>

@@ -18,11 +18,11 @@ const FooterMiddle = ({ intl }) => (
         <div className="content">
           <div className="item">
             <span className="title">Hours:</span>
-            <span>{intl.formatMessage({ id: 'monday_friday' })} 8:00am - 5:00pm</span>
+            <span>{intl.formatMessage({ id: 'monday_friday' })} 9:00am - 5:00pm</span>
           </div>
           <div className="item">
             <span className="title">{intl.formatMessage({ id: 'phone_contactDetails' })}</span>
-            <span>(000) 000 - 0000</span>
+            <span>+1 (970) 306 - 6650</span>
           </div>
           <div className="item">
             <span className="title">Email:</span>

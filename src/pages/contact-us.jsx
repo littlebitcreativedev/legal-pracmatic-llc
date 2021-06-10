@@ -49,11 +49,11 @@ const ContactPage = ({ location }) => {
                       <span className="bold">
                         <FormattedMessage id="phone_contactDetails" />
                       </span>
-                      <span>+ (000) 000 - 0000</span>
+                      <span>+1 (970) 306 - 6650</span>
                     </div>
                     <div className="contact-details">
                       <span className="bold">Whatsapp:</span>
-                      <span>+ (000) 000 - 0000</span>
+                      <span>+57 (318) 753 - 1805</span>
                     </div>
                     <p>
                       <FormattedMessage id="message_contactDetails" />

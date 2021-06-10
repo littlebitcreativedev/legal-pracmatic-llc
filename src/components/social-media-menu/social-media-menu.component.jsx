@@ -13,16 +13,16 @@ const twitter = <FontAwesomeIcon icon={faTwitter} />;
 
 const SocialMedia = () => (
   <div className="social-media">
-    <a href="https://www.whatsapp.com" target="_blank" rel="noreferrer">
+    <a href="https://wa.me/573187531805" target="_blank" rel="noreferrer">
       <span className="icon">{whatsapp}</span>
     </a>
     <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
       <span className="icon">{linkedIn}</span>
     </a>
-    <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
+    <a href="https://www.facebook.com/Legal-Pracmatic-LLC-107354151578818" target="_blank" rel="noreferrer">
       <span className="icon">{facebook}</span>
     </a>
-    <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
+    <a href="https://twitter.com/legalpracmatic" target="_blank" rel="noreferrer">
       <span className="icon">{twitter}</span>
     </a>
   </div>

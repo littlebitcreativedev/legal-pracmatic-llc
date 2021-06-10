@@ -42,11 +42,11 @@ const ContactInformation = ({ intl }) => (
               </div>
               <div>
                 <span className="title">{phone}</span>
-                <span className="data">+ (000) 000 - 0000</span>
+                <span className="data">+1 (970) 306 - 6650</span>
               </div>
               <div>
                 <span className="title">{whatsapp}</span>
-                <span className="data">+ (000) 000 - 0000</span>
+                <span className="data">+57 (318) 753 - 1805</span>
               </div>
               <div>
                 <span className="title">{envelope}</span>
@@ -65,7 +65,7 @@ const ContactInformation = ({ intl }) => (
                 <span className="title">
                   <FormattedMessage id="monday_friday" />:
                 </span>
-                <span className="data">8:00am - 5:00pm</span>
+                <span className="data">9:00am - 5:00pm</span>
               </div>
               <div>
                 <span className="title">
