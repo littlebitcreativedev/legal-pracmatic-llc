@@ -25,7 +25,7 @@ const marker = <FontAwesomeIcon icon={faMapMarkerAlt} />;
 const ContactInformation = ({ intl }) => (
   <div
     className="contact-information"
-    style={{ backgroundImage: `url("https://i.ibb.co/59cVmdy/street-map.png")` }}
+    style={{ backgroundImage: `url("https://imagizer.imageshack.com/img922/8181/zRC0tF.png")` }}
     alt="areal view of highway ramps."
   >
     <Container>

@@ -39,7 +39,7 @@ const PageBanner = ({ title, imageUrl, altText, location }) => {
   return (
     <div
       className="page-banner"
-      style={{ backgroundImage: `url('https://i.ibb.co/Qdptpyx/page-banner-image.png')` }}
+      style={{ backgroundImage: `url('https://imagizer.imageshack.com/img922/7002/aGCfs0.png')` }}
       alt={altText}
     >
       <div className="content">

@@ -9,7 +9,7 @@ const UnderConstruction = ({ intl }) => (
     <div
       className="image"
       style={{
-        backgroundImage: `url('https://i.ibb.co/1qzGf65/under-construction.png')`,
+        backgroundImage: `url('https://imagizer.imageshack.com/img922/6451/0jLGgR.png')`,
       }}
     />
     <div className="section-content">

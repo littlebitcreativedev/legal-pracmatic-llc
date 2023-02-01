@@ -67,7 +67,7 @@ const SectionContact = () => {
     <div
       className="section-contact"
       style={{
-        backgroundImage: `url('https://i.ibb.co/HqKQnn2/contact-banner.png')`,
+        backgroundImage: `url('https://imagizer.imageshack.com/img924/2392/sJ6F6p.png')`,
       }}
     >
       <Container>
