@@ -24,7 +24,7 @@ const ContactPage = ({ location }) => {
         <Container>
           <PageBanner
             title={intl.formatMessage({ id: 'contact-us' })}
-            imageUrl="https://i.ibb.co/ykJD8mm/contact-page-banner.jpg"
+            imageUrl="https://imagizer.imageshack.com/img922/7002/aGCfs0.png"
             altText=""
             location={location}
           />

@@ -25,7 +25,7 @@ const IndexPage = ({ intl }) => (
       <Container>
         <CarouselBanner intl={intl} />
         <SectionImageLeftButton
-          imageUrl="https://i.ibb.co/W0n0c2R/woman-laptop-working.png"
+          imageUrl="https://imagizer.imageshack.com/img924/3835/T87MLR.png"
           sectionHeading={intl.formatMessage({ id: 'index_page.sectionHeading_imageLeft' })}
           text={intl.formatMessage({ id: 'index_page.text_imageLeft' })}
           routeName="services/translations"
@@ -33,7 +33,7 @@ const IndexPage = ({ intl }) => (
         />
         <SectionServices intl={intl} />
         <SectionImageRightButton
-          imageUrl="https://i.ibb.co/4RrY0mc/remote-work-connect.png"
+          imageUrl="https://imagizer.imageshack.com/img922/3227/z1JlCk.png"
           sectionHeading={intl.formatMessage({ id: 'index_page.sectionHeading_imageRight' })}
           text={intl.formatMessage({ id: 'index_page.text_imageRight' })}
           routeName="/services"

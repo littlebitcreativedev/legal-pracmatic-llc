@@ -16,7 +16,7 @@ const Success = ({ intl }) => (
       <SEO lang={intl.locale} title={intl.formatMessage({ id: 'thank-you.heading' })} />
       <Container>
         <SectionImageLeftButton
-          imageUrl="https://i.ibb.co/kgg9Cwd/guy-laptop-books-reflect.png"
+          imageUrl="https://imagizer.imageshack.com/img922/4444/MQeJWF.png"
           sectionHeading={intl.formatMessage({ id: 'thank-you.heading' })}
           text={intl.formatMessage({ id: 'thank-you.subheading' })}
           routeName="/"

@@ -18,7 +18,7 @@ const NotFoundPage = ({ intl }) => (
       <SEO lang={intl.locale} title={intl.formatMessage({ id: '404-error' })} />
       <Container>
         <SectionImageRightButton
-          imageUrl="https://i.ibb.co/t4hgMcV/404.png"
+          imageUrl="https://imagizer.imageshack.com/img924/1050/q1vPWa.png"
           sectionHeading="404 Not Found:"
           text={`Oh, No! Something's definitely off!`}
           routeName="/"

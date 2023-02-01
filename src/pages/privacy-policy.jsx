@@ -18,7 +18,7 @@ const PrivacyPage = ({ location, intl }) => (
       <div className="privacy-policy">
         <PageBanner
           title={intl.formatMessage({ id: 'privacy-policy' })}
-          imageUrl="https://i.ibb.co/ykJD8mm/contact-page-banner.jpg"
+          imageUrl="https://imagizer.imageshack.com/img922/7002/aGCfs0.png"
           altText=""
           location={location}
         />
