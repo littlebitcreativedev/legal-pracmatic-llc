@@ -17,7 +17,7 @@ const CarouselBanner = ({ intl }) => (
       <div
         className="image"
         style={{
-          backgroundImage: `url('https://i.ibb.co/j3t63s8/people-books-studying.png')`,
+          backgroundImage: `url('https://imagizer.imageshack.com/img923/8978/r3P5Q2.png')`,
         }}
       />
       <div className="carousel-caption">
@@ -34,7 +34,7 @@ const CarouselBanner = ({ intl }) => (
       <div
         className="image"
         style={{
-          backgroundImage: `url('https://i.ibb.co/86pPNxw/woman-man-shaking-hands.png')`,
+          backgroundImage: `url('https://imagizer.imageshack.com/img922/3227/z1JlCk.png')`,
         }}
       />
       <div className="carousel-caption">
