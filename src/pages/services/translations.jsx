@@ -35,7 +35,7 @@ const TranslationsPage = ({ location }) => {
               <div
                 className="image"
                 style={{
-                  backgroundImage: `url('https://i.ibb.co/z5XW5kX/woman-typing-laptop.png')`,
+                  backgroundImage: `url('https://imagizer.imageshack.com/img924/3835/T87MLR.png')`,
                 }}
               />
               <div className="section-content">
@@ -73,7 +73,7 @@ const TranslationsPage = ({ location }) => {
               <div
                 className="image stack"
                 style={{
-                  backgroundImage: `url('https://i.ibb.co/5jnwvBS/guy-laptop-books.png')`,
+                  backgroundImage: `url('https://imagizer.imageshack.com/img922/3103/CIetHq.png')`,
                 }}
               />
             </div>

@@ -71,7 +71,7 @@ const ServiceDescriptions = ({ intl }) => {
       <div className="services-tabpanel">
         <TabPanel value={value} index={0}>
           <SectionImageLeftButton
-            imageUrl="https://i.ibb.co/W0n0c2R/woman-laptop-working.png"
+            imageUrl="https://imagizer.imageshack.com/img924/3835/T87MLR.png"
             sectionHeading={intl.formatMessage({ id: 'translations' })}
             text={intl.formatMessage({ id: 'service_page.translation-description' })}
             routeName="/services/translations"
@@ -80,7 +80,7 @@ const ServiceDescriptions = ({ intl }) => {
         </TabPanel>
         <TabPanel value={value} index={1}>
           <SectionImageLeftButton
-            imageUrl="https://i.ibb.co/PcTXwdv/notary-public.png"
+            imageUrl="https://imagizer.imageshack.com/img922/7974/HvEDLN.png"
             sectionHeading={intl.formatMessage({ id: 'notary-public' })}
             text={intl.formatMessage({ id: 'service_page.coming-soon' })}
             routeName="/services/notary-public"
@@ -89,7 +89,7 @@ const ServiceDescriptions = ({ intl }) => {
         </TabPanel>
         <TabPanel value={value} index={2}>
           <SectionImageLeftButton
-            imageUrl="https://i.ibb.co/4mqB2rB/document-preparation.png"
+            imageUrl="https://imagizer.imageshack.com/img922/1758/7IfFbD.png"
             sectionHeading={intl.formatMessage({ id: 'document-preparation' })}
             text={intl.formatMessage({ id: 'service_page.coming-soon' })}
             routeName="/services/document-preparations"
@@ -98,7 +98,7 @@ const ServiceDescriptions = ({ intl }) => {
         </TabPanel>
         <TabPanel value={value} index={3}>
           <SectionImageLeftButton
-            imageUrl="https://i.ibb.co/cDp76t9/conciliations.png"
+            imageUrl="https://imagizer.imageshack.com/img922/72/13iGmw.png"
             sectionHeading={intl.formatMessage({ id: 'conciliations' })}
             text={intl.formatMessage({ id: 'service_page.coming-soon' })}
             routeName="/services/conciliations"
